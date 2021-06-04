@@ -1,60 +1,94 @@
-div {
-  justify-content: center;
+body>div{
+  
+    display: flex;
+    justify-content: center;
+    text-align: center;
  
-
-
-
-
 }
 
+body > div>div {
+  width: 90%;
+  height: 70vh;
+  
+} 
 
-div>div>div{
+.dockleft{
+  width: 25%;
+  height:400px;
+}
+
+.kutu1{
   display: flex;
-
-  
- 
- 
 }
 
 
 
-div>div:nth-child(2){
- 
-  width:25%;
-  
-}
-
-div>div:nth-child(3){
-  width:70%;
-}
 
 
 .header{
-  width: 1310px;
-  margin-left:5px;
-  height:100px;
-  background-color:rgb(57, 57, 185);
-  
+  width:auto;
+  height:70px;
+  background-color: #0000ff;
+  border: 2px solid rgb(8, 8, 97);
+ 
+}
+
+.path{
+  width:auto;
+  height:140px;
+  background-color: violet;
+  border: 2px solid rgb(224, 19, 173);
 
 }
 
-.sidebar{
-  margin:5px;
+
+.docktop{
+  width:auto;
+  height:70px;
+  background-color:rgb(228, 174, 93);
+  border: 2px solid rgb(224, 101, 19);
+}
+
+
+.dockleft{
+  width:25%;
+  height: 400px;
+  background-color: violet;
+  border: 2px solid rgb(224, 19, 53);
+}
+
+
+
+.dockright{
+  width:25%;
   height:400px;
-  background-color: rgb(255, 136, 0);
-  float:left;
+  background-color: rgb(87, 211, 118);
+  border: 2px solid rgb(10, 107, 51);
 }
 
-.content {
-  margin:5px; 
-height:400px;
-background-color: rgb(175, 55, 95);
+.error{
+  width:600px;
+  height:100px;
+  background-color: rgb(161, 169, 212);
+  border: 2px solid rgb(31, 7, 7);
+}
 
+.content{
+  height:296px;
+  background-color: blueviolet;
+  border: 2px solid rgb(224, 101, 19);
+}
+
+.dockbottom{
+  width:auto;
+  height:70px;
+  background-color: rgb(130, 238, 157);
+  border: 2px solid rgb(54, 159, 185);
 }
 
 .footer{
-  margin:5px;
-  background-color: rgb(71, 255, 80);
-  width: 1310px;
-  height:100px;
+  width:auto;
+  height:70px;
+  background-color: rgb(231, 165, 89);
+  border: 2px solid rgb(201, 80, 43);
 }
