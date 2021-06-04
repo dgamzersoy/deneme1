@@ -1,0 +1,23 @@
+
+li{ 
+    display: inline-block;
+}
+
+
+ul ul  {display: none;
+position:absolute;
+width:100px;}
+
+li:hover > ul  {
+    display: block;
+background-color: blue;}
+
+ul li{
+    display: inline-block;
+}
+
+li ul li:hover span {
+    display: block;
+    background-color: chartreuse;
+
+}

@@ -1,18 +1,92 @@
-body>div{
-  
+body >div{
     display: flex;
     justify-content: center;
     text-align: center;
- 
 }
 
-body > div>div {
+.menu > li{
+  cursor:pointer;
+  padding:15px 15px;
+}
+
+.header .menu > li { 
+  display: inline-block;
+  position: relative;
+}
+
+.menu > li:hover {
+  display:inline-block;
+  background-color: rgb(192, 183, 183);
+}
+
+
+.header ul ul {
+  display: none;
+  background-color: rgba(192, 183, 183, .7);
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width:70px;
+  padding:0;
+  text-align: left;
+  width: 200px;
+}
+
+.header ul ul ul{
+  display: none;
+  background-color: rgba(192, 183, 183, .7);
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width:70px;
+  padding:0;
+  text-align: left;
+  width: 200px;
+}
+
+
+.header li:hover ul ul{
+  display:block;
+}
+.header li:hover ul {
+  display: block;
+}
+
+.menu:nth-child(1):active{
+  color:RED;
+}
+
+
+.header > ul > li{
+  display: inline-block;
+}
+
+
+.header ul ul >li {
+  text-align: left;
+}
+
+li > ul > li {
+  display: block;
+  padding: 12px 2px 2px 5px;
+  margin: 5px;
+}
+
+li > ul > li:hover {
+  background-color: red;
+}
+
+.path p{
+  line-height: 1.7em;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body > div > div {
   width: 90%;
   height: 70vh;
-  
 } 
 
-.dockleft{
+.dockleft {
   width: 25%;
   height:400px;
 }
@@ -21,24 +95,19 @@ body > div>div {
   display: flex;
 }
 
-
-
-
-
 .header{
   width:auto;
-  height:70px;
-  background-color: #0000ff;
-  border: 2px solid rgb(8, 8, 97);
+  height:100px;
+  background-color: #dadae4;
+  border: 2px solid rgb(208, 208, 221);
  
 }
 
 .path{
   width:auto;
-  height:140px;
+  height:70px;
   background-color: violet;
   border: 2px solid rgb(224, 19, 173);
-
 }
 
 
@@ -49,15 +118,12 @@ body > div>div {
   border: 2px solid rgb(224, 101, 19);
 }
 
-
 .dockleft{
   width:25%;
   height: 400px;
   background-color: violet;
   border: 2px solid rgb(224, 19, 53);
 }
-
-
 
 .dockright{
   width:25%;
@@ -91,4 +157,9 @@ body > div>div {
   height:70px;
   background-color: rgb(231, 165, 89);
   border: 2px solid rgb(201, 80, 43);
+}
+
+.footer>p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
 }

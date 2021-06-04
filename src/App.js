@@ -1,14 +1,42 @@
 
 import './App.css';
 
+
 function App() {
   return (
     <div>
       <div class="header">
-        <h1>header</h1>
+      <ul className="menu">
+        <li><span>Anasayfa</span></li>
+        <li><span>Hakkında</span></li>
+        <li>
+            <span>Dersler</span>
+            <ul>
+                <li><span>php</span></li>
+                <li><span>css</span></li>
+                <li><span>html</span></li>
+                <li><span>javascript</span></li>
+                <li><span>c#</span></li>
+                <li><span>c++</span></li>
+            </ul>
+        </li>
+        <li><span>Referanslar</span></li>
+        <li><span>Ödüller</span></li>
+        <li><span>İletişim</span>
+        <ul>
+                <li><span>Adres</span></li>
+                <li><span>Telefon</span></li>
+                <li><span>Email</span></li>
+                
+            </ul></li>
+       
+        <li><span>Konuşulanlar</span></li>
+        <li><span>Hava Durumu</span></li>
+    </ul>
+        
       </div>
       <div class="path">
-      <h1>path</h1>
+      <p><i>Açıklamalar Gelecek</i></p>
       </div>
     
       <div class="docktop">
@@ -36,7 +64,7 @@ function App() {
       <h1>dockbottom</h1>
       </div>
       <div class="footer">
-      <h1>footer</h1>
+      <p>Bize Ulaşın</p>
       </div>
   </div>
   );
