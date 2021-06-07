@@ -1,7 +1,10 @@
 
 import './App.css';
-
-
+import {FaTwitter} from "react-icons/fa";
+import {FaEnvelopeOpenText} from "react-icons/fa";
+import {FaAsterisk} from "react-icons/fa";
+import {FaCloudMoonRain} from "react-icons/fa";
+import {FaSearch} from "react-icons/fa";
 function App() {
   return (
     <div>
@@ -40,19 +43,47 @@ function App() {
       </div>
     
       <div class="docktop">
-      <h1>docktop</h1>
+     <form><div id ="box"> 
+       <input type ="text" id="search" placeholder="Arama" > 
+         </input>
+       </div></form>
       </div>
 
       <div class="kutu1">
         <div class="dockleft">
-        <h1>dockleft</h1>
+        <ul className="menu2">
+        <li><span>Gündem</span></li>
+        <li><span>Magazin</span></li>
+        <li>
+            <span>Spor</span>
+            <ul>
+                <li><span>futbol</span></li>
+                <li><span>basketbol</span></li>
+                <li><span>voleybol</span></li>
+                <li><span>tenis</span></li>
+               
+            </ul>
+            </li>
+            <li><span>Burçlar</span></li>
+   
+        </ul>
         </div>
         <div class="kutu2">
         <div class="error">
-        <h1>error</h1>
+        <h1 className="deneme">error</h1>
         </div>
         <div class="content">
-        <h1>content</h1>
+        <ul className ="yuvarlak">
+          <li><span><FaTwitter /> </span>
+            <ul>
+              <li><span><FaEnvelopeOpenText/></span></li>
+               <li><span><FaAsterisk/></span></li>
+                <li><span><FaCloudMoonRain></FaCloudMoonRain></span></li>
+          </ul>
+          
+          </li>
+          </ul>
+
         </div>
         </div>
         <div class="dockright">

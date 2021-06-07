@@ -53,7 +53,7 @@ body >div{
 }
 
 .menu:nth-child(1):active{
-  color:RED;
+  background-color:rgb(211, 113, 113);
 }
 
 
@@ -73,7 +73,7 @@ li > ul > li {
 }
 
 li > ul > li:hover {
-  background-color: red;
+  background-color:rgb(126, 117, 117);
 }
 
 .path p{
@@ -162,4 +162,155 @@ body > div > div {
 .footer>p{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: medium;
+}
+
+.menu2 li ul {
+  
+ 
+  display: none;
+  top:5px;
+  right:20px;
+ 
+
+}
+
+.menu2 li{
+  list-style:none;
+  position: relative;
+  text-align:left;
+  margin:5px;
+  padding:5px;
+  border-right:1px solid rgba(0,0,0,.1);
+}
+
+.menu2 li ul>li{
+
+
+ font-family: sans-serif;
+ margin:2px;
+ padding:3px;
+ 
+}
+
+.menu2 li:hover ul{
+
+  display:block;
+  
+}
+
+
+
+.yuvarlak >li{
+  cursor:pointer;
+  list-style:none;
+  border:1px solid rgb(75, 70, 70);
+  background-color:rgb(101, 149, 221);
+  opacity: 1;
+  width:90px;
+  height:90px;
+  border-radius: 45px;
+  position:fixed;
+  bottom:0px;
+  right:0px;
+}
+.yuvarlak >li:before{
+  content:'';
+  border: 2px solid red;
+  border-radius: 45px;
+  position: absolute;
+  bottom:0px;
+  right:0px;
+}
+
+.yuvarlak >li:hover:before{
+  width: 180px;
+  height: 180px;
+}
+
+.yuvarlak li>ul{
+  opacity: 0.7;
+  display: none;
+}
+
+
+.yuvarlak>li>span{
+  line-height: 5.5;
+  color: rgb(75, 71, 71);
+   
+}
+
+
+.yuvarlak li:hover ul {
+  display: block;
+}
+
+
+ .yuvarlak li ul li
+{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  color:black; 
+  border: 1px solid #333;
+  padding: 0;
+  background-color: rgb(95, 135, 196);
+}
+
+
+.yuvarlak li ul li:nth-of-type(1)
+{
+ 
+  bottom: 120px;
+  right:30px;
+}
+
+
+.yuvarlak li ul li:nth-of-type(2)
+{
+  bottom: 80px;
+  right: 100px;
+}
+
+
+.yuvarlak li ul li:nth-of-type(3)
+{
+  right: 120px;
+  bottom: 5px;
+}
+
+ 
+
+#box {
+  max-width: 800px;
+  position: relative;
+  float: left;
+  top:14px;
+  left:7px;
+}
+
+#search {
+  width: 250px;
+  height: 30px;
+ background-color: rgb(226, 125, 43);
+ color:cornsilk;
+ 
+}
+
+
+.deneme::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.deneme::after {
+  content: '/'
 }
